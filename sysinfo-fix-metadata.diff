@@ -1,0 +1,15 @@
+--- sysinfo-0.11.0/Cargo.toml	2020-02-08T15:34:59+00:00
++++ sysinfo-0.11.0/Cargo.toml	2020-02-08T22:02:50.259241+00:00
+@@ -42,12 +42,7 @@
+ debug = ["libc/extra_traits"]
+ [target."cfg(not(any(target_os = \"unknown\", target_arch = \"wasm32\")))".dependencies.libc]
+ version = "0.2"
+-[target."cfg(windows)".dependencies.ntapi]
+-version = "0.3"
+ 
+-[target."cfg(windows)".dependencies.winapi]
+-version = "0.3"
+-features = ["fileapi", "handleapi", "ifdef", "ioapiset", "minwindef", "pdh", "psapi", "synchapi", "sysinfoapi", "winbase", "winerror", "winioctl", "winnt", "oleauto", "wbemcli", "rpcdce", "combaseapi", "objidl", "objbase", "powerbase", "netioapi"]
+ [badges.appveyor]
+ repository = "GuillaumeGomez/sysinfo"
+ service = "github"
